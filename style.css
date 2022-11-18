@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "earth";
+  src: url("/asset/police/earthorbiterbold.ttf");
+}
+body {
+  font-family: "earth", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 5%;
+}
+
+/* Input checkbox with svg */
+input[type=checkbox] {
+  display: none;
+}
+
+.label {
+  display: inline-block;
+  fill: white;
+  transition: 0.3s;
+}
+
+#validator {
+  margin-top: 10%;
+}
+
+svg {
+  height: 120px;
+  width: 120px;
+}
+
+.label:hover {
+  fill: #EB6711;
+}
+
+input[type=checkbox]:checked + .label {
+  fill: #EB6711;
+}
+
+.index {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  background-color: #222222;
+  width: 17%;
+  height: 100vh;
+}
+
+.main {
+  width: 83%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("asset/img/bg/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.white {
+  height: 57%;
+  width: 57%;
+  margin-left: 29%;
+  margin-top: 8%;
+  fill: white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+  color: #EB6711;
+  margin-top: 25%;
+}
+
+.block {
+  display: flex;
+  font-size: 55px;
+  color: #EB6711;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.rond {
+  margin-top: 15%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+.button {
+  position: relative;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  display: block;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  transform: skewX(-30deg);
+  transition: 0.5s all;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  width: 20%;
+  background-color: #22222272;
+  margin-left: 20%;
+}
+.button span {
+  display: block;
+  transform: skew(30deg);
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.button:hover {
+  background-color: whitesmoke;
+}
+.button:hover span {
+  color: black;
+}
+.button.type1 {
+  color: whitesmoke;
+}
+.button.type1.type1::after, .button.type1.type1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.5s ease;
+  border-radius: 2px;
+}
+.button.type1.type1::after {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 13px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: whitesmoke;
+  border-right-color: whitesmoke;
+}
+.button.type1.type1::before {
+  top: 0;
+  left: 0;
+  border-top-left-radius: 13px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: whitesmoke;
+  border-left-color: whitesmoke;
+}
+.button.type1.type1:hover:after, .button.type1.type1:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  display: none;
+  width: 100%;
+}
+
+.main1 {
+  width: 83%;
+  background: linear-gradient(rgba(0, 0, 0, 0.787), rgba(0, 0, 0, 0.736)), url("asset/img/bg/5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.regle1 {
+  display: none;
+  width: 100%;
+}
+
+.heure {
+  color: #EB6711;
+  font-size: 90px;
+  text-align: right;
+}
+
+.lorem {
+  color: #ffffff;
+  font-size: 60px;
+  margin: 8% 10%;
+}
+
+.timer {
+  color: white;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+}
+
+.triangle {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 43px solid transparent;
+  border-bottom: 74px solid #EB6711;
+  border-left: 43px solid transparent;
+  transform: rotate(45deg);
+  margin-left: 5%;
+}
+
+.effacer2 {
+  margin-top: 20%;
+}
+
+.regle2 {
+  display: none;
+  width: 100%;
+}
+
+.triangle1 {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 43px solid transparent;
+  border-bottom: 74px solid #EB6711;
+  border-left: 43px solid transparent;
+  transform: rotate(30deg);
+  margin-left: 5%;
+}
+
+.timer1 {
+  color: white;
+  display: flex;
+  font-size: 50px;
+  margin-top: 10%;
+}
+
+.game {
+  display: none;
+  width: 100%;
+}
+
+.game2 {
+  display: none;
+  width: 100%;
+}
+
+.code {
+  background-color: #2222228f;
+  padding: 16px 16px;
+}
+
+.timer2 {
+  fill: white;
+  display: flex;
+  font-size: 50px;
+  margin-top: 2%;
+}
+
+.indice1 {
+  margin-top: 2%;
+  display: none;
+}
+
+.indice2 {
+  margin-top: 2%;
+  display: none;
+}
+
+.indice3 {
+  margin-top: 2%;
+  display: none;
+}
+
+.alphabet {
+  margin-left: 20%;
+}
+
+.avenir1 {
+  margin: 0 auto;
+}
+
+.avenir {
+  margin: 2% auto;
+  background-color: transparent;
+  border: 2px solid white;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.fin {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
